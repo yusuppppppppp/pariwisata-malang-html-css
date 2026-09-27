@@ -1,12 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Malang Escape</title>
 </head>
+
 <body>
-    <h1 class="uppercase">Testing Tailwind</h1>
+
+    <!-- nav -->
+
+    <header class="w-screen h-fit p-6 absolute z-1">
+        <nav class="w-full flex flex-row justify-center">
+            <ul class="flex flex-row gap-10">
+                <li><a class="font-mono font-semibold text-gray-800 capitalize" href="#home">home</a></li>
+                <li><a class="font-mono font-semibold text-gray-800 capitalize" href="#destinations">destinations</a>
+                </li>
+                <li><a class="font-mono font-semibold text-gray-800 capitalize" href="#experiences">experiences</a></li>
+                <li><a class="font-mono font-semibold text-gray-800 capitalize" href="#">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- nav end -->
+
+    <main class="w-screen h-fit overflow-hidden">
+
+        <!-- hero -->
+
+        <section id="home"
+            class="w-screen h-screen relative overflow-hidden bg-cover bg-[url(/assets/images/hero-final.jpg)] flex flex-row justify-center items-end">
+            <div class="flex flex-col justify-start items-center gap-7 max-w-90 pb-20">
+                <h1 class="font-roboto font-semibold text-4xl max-w-80 text-center text-gray-900">
+                    Escape to the beauty of Malang
+                </h1>
+                <p class="font-geist text-md text-center text-gray-600 font-semibold">
+                    Discover breathtaking mountains, hidden gems, and unforgettable adventures around Malang.
+                </p>
+                <a href="#" class="flex flex-row gap-1">
+                    <div class="py-2 px-5 bg-gray-900 rounded-2xl">
+                        <p class="font-mono font-semibold uppercase text-white">explore malang</p>
+                    </div>
+                    <div class="p-2 bg-gray-900 rounded-[50%]">
+                        <img class="invert w-6 h-6" alt="arrow-icon" src="assets/icons/move-up-right.png" />
+                    </div>
+                </a>
+            </div>
+            <div class="absolute bg-linear-to-t from-white to-white/0 z-1 w-full h-15 bottom-0"></div>
+        </section>
+
+        <!-- hero end -->
+
+        <!-- destinations -->
+
+        <section id="destinations" class="w-screen h-auto px-10 py-30 overflow-hidden">
+            <div class="w-full h-full flex flex-col justify-start items-stretch gap-10">
+                <div class="py-2 px-5 bg-violet-100/50 w-fit rounded-2xl">
+                    <h5 class="font-mono font-semibold text-gray-900 capitalize text-sm">destinations</h5>
+                </div>
+                <div class="w-full flex flex-row justify-between items-end">
+                    <div class="pl-15 max-w-110">
+                        <h2 class="font-roboto font-semibold text-gray-900 text-4xl">
+                            Find your perfect escape in Malang
+                        </h2>
+
+                    </div>
+                    <a href="#" class="flex flex-row gap-1">
+                        <div class="py-2 px-5 bg-gray-900 rounded-2xl">
+                            <p class="font-mono font-semibold uppercase text-white">explore malang</p>
+                        </div>
+                        <div class="p-2 bg-gray-900 rounded-[50%]">
+                            <img class="invert w-6 h-6" alt="arrow-icon" src="assets/icons/move-up-right.png" />
+                        </div>
+                    </a>
+                </div>
+                <div class="w-full h-110 grid grid-cols-4 gap-4">
+                    <a href="#"
+                        class="w-full h-full bg-cover bg-[url(/assets/images/bromo.jpg)] rounded-2xl relative overflow-hidden">
+                        <div class="absolute w-full h-full top-0 left-0 p-5">
+                            <div class="w-full h-full flex flex-col justify-between items-stretch">
+                                <div class="w-fit p-2 bg-white rounded-[50%] self-end">
+                                    <img class="w-6 h-6" alt="gunung-bromo" src="assets/icons/move-up-right.png" />
+                                </div>
+                                <div class="w-full flex flex-col gap-2">
+                                    <h2 class="font-roboto font-semibold capitalize text-white text-lg">
+                                        Mountain Adventures
+                                    </h2>
+                                    <p class="font-geist text-white text-md leading-[1.2]">
+                                        Chase the sunrise and explore the mountains around Malang.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="w-full h-full bg-cover bg-[url(/assets/images/coban-pelangi.jpg)] rounded-2xl relative overflow-hidden">
+                        <div class="absolute w-full h-full top-0 left-0 p-5">
+                            <div class="w-full h-full flex flex-col justify-between items-stretch">
+                                <div class="w-fit p-2 bg-white rounded-[50%] self-end">
+                                    <img class="w-6 h-6" alt="coban-pelangi" src="assets/icons/move-up-right.png" />
+                                </div>
+                                <div class="w-full flex flex-col gap-2">
+                                    <h2 class="font-roboto font-semibold capitalize text-white text-lg">
+                                        Hidden Waterfalls
+                                    </h2>
+                                    <p class="font-geist text-white text-md leading-[1.2]">
+                                        Escape into nature and discover refreshing hidden gems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="w-full h-full bg-cover bg-[url(/assets/images/Pantai-Balekambang.jpg)] rounded-2xl relative overflow-hidden">
+                        <div class="absolute w-full h-full top-0 left-0 p-5">
+                            <div class="w-full h-full flex flex-col justify-between items-stretch">
+                                <div class="w-fit p-2 bg-white rounded-[50%] self-end">
+                                    <img class="w-6 h-6" alt="Pantai-Balekambang"
+                                        src="assets/icons/move-up-right.png" />
+                                </div>
+                                <div class="w-full flex flex-col gap-2">
+                                    <h2 class="font-roboto font-semibold capitalize text-white text-lg">
+                                        Beach Getaways
+                                    </h2>
+                                    <p class="font-geist text-white text-md leading-[1.2]">
+                                        Relax by the sea and uncover Malangs beautiful coastline.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="w-full h-full bg-cover bg-[url(/assets/images/kampung-ww.webp)] rounded-2xl relative overflow-hidden">
+                        <div class="absolute w-full h-full top-0 left-0 p-5">
+                            <div class="w-full h-full flex flex-col justify-between items-stretch">
+                                <div class="w-fit p-2 bg-white rounded-[50%] self-end">
+                                    <img class="w-6 h-6" alt="kampung-warna-warni"
+                                        src="assets/icons/move-up-right.png" />
+                                </div>
+                                <div class="w-full flex flex-col gap-2">
+                                    <h2 class="font-roboto font-semibold capitalize text-white text-lg">
+                                        Cultural Escapes
+                                    </h2>
+                                    <p class="font-geist text-white text-md leading-[1.2]">
+                                        Experience local culture, history, and the charm of Malang.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- destinations end -->
+
+        <!-- experiences -->
+
+        <section id="experiences" class="w-screen h-auto px-10 py-15 overflow-hidden">
+            <div class="w-full h-full flex flex-row justify-start gap-15">
+                <div class="py-2 px-5 bg-violet-100/50 w-fit h-fit rounded-2xl">
+                    <h5 class="font-mono font-semibold text-gray-900 capitalize text-sm">experiences</h5>
+                </div>
+                <div class="w-full flex flex-col justify-start items-start gap-20">
+                    <div class="flex flex-col gap-15">
+                        <h2 class="font-roboto font-semibold text-4xl">
+                            Born from a love for nature and exploration, <span class="text-gray-600"> we craft
+                                meaningful
+                                routes that do more than lead
+                                you to the summit—they inspire the soul, connect people, and stay forever in your
+                                memory.</span>
+                        </h2>
+                        <div class="w-full h-60 grid grid-cols-3 gap-4">
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-15">
+                        <h2 class="font-roboto font-semibold text-4xl text-end">
+                            Born from a love for nature and exploration, <span class="text-gray-600"> we craft
+                                meaningful
+                                routes that do more than lead
+                                you to the summit—they inspire the soul, connect people, and stay forever in your
+                                memory.</span>
+                        </h2>
+                        <div class="w-full h-60 grid grid-cols-3 gap-4">
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-15">
+                        <h2 class="font-roboto font-semibold text-4xl">
+                            Born from a love for nature and exploration, <span class="text-gray-600"> we craft
+                                meaningful
+                                routes that do more than lead
+                                you to the summit—they inspire the soul, connect people, and stay forever in your
+                                memory.</span>
+                        </h2>
+                        <div class="w-full h-60 grid grid-cols-3 gap-4">
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-15">
+                        <h2 class="font-roboto font-semibold text-4xl text-end">
+                            Born from a love for nature and exploration, <span class="text-gray-600"> we craft
+                                meaningful
+                                routes that do more than lead
+                                you to the summit—they inspire the soul, connect people, and stay forever in your
+                                memory.</span>
+                        </h2>
+                        <div class="w-full h-60 grid grid-cols-3 gap-4">
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                            <div class="w-full h-full rounded-2xl overflow-hidden">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- experiences end -->
+
+        <!-- about -->
+
+        <section id="about" class="w-screen h-auto py-15 overflow-hidden">
+            <div class="w-full h-full flex flex-col gap-20">
+                <div class="w-full h-fit relative">
+                    <div class="absolute bg-linear-to-b from-white to-white/0 z-1 w-full h-15 top-0"></div>
+                    <img src="/assets/images/about.jpg" alt="about-image" class="w-screen h-screen mask-cover">
+                    <div class="absolute bg-linear-to-t from-white to-white/0 z-1 w-full h-15 bottom-0"></div>
+                </div>
+                <div class="flex flex-col w-full items-start justify-stretch">
+                    <div class="self-center flex flex-row gap-10 justify-center items-start">
+                        <div class="flex flex-row gap-4">
+                            <div class="bg-violet-100 p-2 rounded-sm overflow-hidden ">
+                                <img src="/assets/icons/map-pin-house.png" alt="destinations-icon" class="h-full w-10 mask-cover">
+                            </div>
+                            <div class="flex flex-col justify-start">
+                                <h3 class="font-mono font-semibold text-2xl uppercase">20+</h3>
+                                <p class="font-roboto text-md">total destinations</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-4">
+                            <div class="bg-violet-100 p-2 rounded-sm overflow-hidden ">
+                                <img src="/assets/icons/map-pin-house.png" alt="destinations-icon" class="h-full w-10 mask-cover">
+                            </div>
+                            <div class="flex flex-col justify-start">
+                                <h3 class="font-mono font-semibold text-2xl uppercase">20+</h3>
+                                <p class="font-roboto text-md">total destinations</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-4">
+                            <div class="bg-violet-100 p-2 rounded-sm overflow-hidden ">
+                                <img src="/assets/icons/map-pin-house.png" alt="destinations-icon" class="h-full w-10 mask-cover">
+                            </div>
+                            <div class="flex flex-col justify-start">
+                                <h3 class="font-mono font-semibold text-2xl uppercase">20+</h3>
+                                <p class="font-roboto text-md">total destinations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about end -->
+
+    </main>
 </body>
+
 </html>
