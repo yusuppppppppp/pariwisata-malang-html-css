@@ -17,9 +17,10 @@
 
     <!-- nav -->
 
-    <header class="w-screen h-fit p-6 absolute z-1">
-        <nav class="w-full flex flex-row justify-center">
-            <ul class="flex flex-row gap-10">
+    <header class="w-full h-fit p-6 absolute z-5">
+        <nav class="w-full mx-auto max-w-[1440px]">
+            <ul
+                class="w-full flex sm:flex-row flex-col sm:justify-center justify-startsm:items-start items-end sm:gap-10 gap-4">
                 <li><a class="font-mono font-semibold text-gray-800 capitalize" href="#home">home</a></li>
                 <li><a class="font-mono font-semibold text-gray-800 capitalize" href="#destinations">destinations</a>
                 </li>
@@ -31,27 +32,33 @@
 
     <!-- nav end -->
 
-    <main class="w-screen h-fit overflow-hidden">
+    <main class="w-full h-fit overflow-hidden">
 
         <!-- hero -->
 
-        <section id="home"
-            class="w-screen h-screen relative overflow-hidden bg-cover bg-[url(/assets/images/hero-final.jpg)] flex flex-row justify-center items-end">
-            <div class="flex flex-col justify-start items-center gap-7 max-w-90 pb-20">
-                <h1 class="font-roboto font-semibold text-4xl max-w-80 text-center text-gray-900">
-                    Escape to the beauty of Malang
-                </h1>
-                <p class="font-geist text-md text-center text-gray-600 font-semibold">
-                    Discover breathtaking mountains, hidden gems, and unforgettable adventures around Malang.
-                </p>
-                <a href="#destinations" class="flex flex-row gap-1">
-                    <div class="py-2 px-5 bg-gray-900 rounded-2xl">
-                        <p class="font-mono font-semibold uppercase text-white">explore malang</p>
+        <section id="home" class="w-full h-screen relative overflow-hidden flex flex-row justify-center items-end">
+            <div class="w-full h-full max-w-[1440px] mx-auto relative">
+                <div class="left-0 top-0 w-full h-full absolute object-cover">
+                    <img src="/assets/images/hero-final.jpg" alt="hero-image" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full h-full flex flex-col justify-end items-center gap-7 pb-20 relative">
+                    <div class="flex flex-col justify-end items-center gap-7 max-w-90">
+                        <h1 class="font-roboto font-semibold text-4xl max-w-80 text-center text-gray-900">
+                            Escape to the beauty of Malang
+                        </h1>
+                        <p class="font-geist text-md text-center text-gray-600 font-semibold">
+                            Discover breathtaking mountains, hidden gems, and unforgettable adventures around Malang.
+                        </p>
+                        <a href="#destinations" class="flex flex-row gap-1">
+                            <div class="py-2 px-5 bg-gray-900 rounded-2xl">
+                                <p class="font-mono font-semibold uppercase text-white">explore malang</p>
+                            </div>
+                            <div class="p-2 bg-gray-900 rounded-[50%]">
+                                <img class="invert w-6 h-6" alt="arrow-icon" src="assets/icons/move-up-right.png" />
+                            </div>
+                        </a>
                     </div>
-                    <div class="p-2 bg-gray-900 rounded-[50%]">
-                        <img class="invert w-6 h-6" alt="arrow-icon" src="assets/icons/move-up-right.png" />
-                    </div>
-                </a>
+                </div>
             </div>
             <div class="absolute bg-linear-to-t from-white to-white/0 z-1 w-full h-15 bottom-0"></div>
         </section>
@@ -60,17 +67,16 @@
 
         <!-- destinations -->
 
-        <section id="destinations" class="w-screen h-auto px-10 py-30 overflow-hidden">
-            <div class="w-full h-full flex flex-col justify-start items-stretch gap-10">
+        <section id="destinations" class="w-full h-fit sm:px-10 px-5 py-30 overflow-hidden">
+            <div class="w-full h-full flex flex-col justify-start items-stretch gap-10 mx-auto max-w-[1440px]">
                 <div class="py-2 px-5 bg-violet-100/50 w-fit rounded-2xl">
                     <h5 class="font-mono font-semibold text-gray-900 capitalize text-sm">destinations</h5>
                 </div>
-                <div class="w-full flex flex-row justify-between items-end">
-                    <div class="pl-15 max-w-110">
+                <div class="w-full flex sm:flex-row flex-col justify-between sm:items-end items-start sm:gap-0 gap-7">
+                    <div class="sm:pl-15 pl-0 max-w-110">
                         <h2 class="font-roboto font-semibold text-gray-900 text-4xl">
                             Find your perfect escape in Malang
                         </h2>
-
                     </div>
                     <a href="#experiences" class="flex flex-row gap-1">
                         <div class="py-2 px-5 bg-gray-900 rounded-2xl">
@@ -81,10 +87,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="w-full h-110 grid grid-cols-4 gap-4">
+                <div class="w-full lg:h-110 sm:h-130 h-350 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
                     <a href="#mountains"
-                        class="w-full h-full bg-cover bg-[url(/assets/images/bromo.jpg)] rounded-2xl relative overflow-hidden mt-15">
-                        <div class="absolute w-full h-full top-0 left-0 p-5">
+                        class="w-full h-full bg-cover bg-[url(/assets/images/bromo.jpg)] rounded-2xl relative overflow-hidden lg:mt-15 mt-0">
+                        <div class="w-full h-full top-0 left-0 p-5">
                             <div class="w-full h-full flex flex-col justify-between items-stretch">
                                 <div class="w-fit p-2 bg-violet-200 rounded-[50%] self-end">
                                     <img class="w-6 h-6" alt="gunung-bromo" src="assets/icons/move-up-right.png" />
@@ -101,8 +107,8 @@
                         </div>
                     </a>
                     <a href="#waterfalls"
-                        class="w-full h-full bg-cover bg-[url(/assets/images/coban-pelangi.jpg)] rounded-2xl relative overflow-hidden mt-10">
-                        <div class="absolute w-full h-full top-0 left-0 p-5">
+                        class="w-full h-full bg-cover bg-[url(/assets/images/coban-pelangi.jpg)] rounded-2xl relative overflow-hidden lg:mt-10 mt-0">
+                        <div class="w-full h-full top-0 left-0 p-5">
                             <div class="w-full h-full flex flex-col justify-between items-stretch">
                                 <div class="w-fit p-2 bg-violet-200 rounded-[50%] self-end">
                                     <img class="w-6 h-6" alt="coban-pelangi" src="assets/icons/move-up-right.png" />
@@ -120,7 +126,7 @@
                     </a>
                     <a href="#beach"
                         class="w-full h-full bg-cover bg-[url(/assets/images/Pantai-Balekambang.jpg)] rounded-2xl relative overflow-hidden">
-                        <div class="absolute w-full h-full top-0 left-0 p-5">
+                        <div class="w-full h-full top-0 left-0 p-5">
                             <div class="w-full h-full flex flex-col justify-between items-stretch">
                                 <div class="w-fit p-2 bg-violet-200 rounded-[50%] self-end">
                                     <img class="w-6 h-6" alt="Pantai-Balekambang"
@@ -138,8 +144,8 @@
                         </div>
                     </a>
                     <a href="#historycal"
-                        class="w-full h-full bg-cover bg-[url(/assets/images/kampung-ww.webp)] rounded-2xl relative overflow-hidden mt-5">
-                        <div class="absolute w-full h-full top-0 left-0 p-5">
+                        class="w-full h-full bg-cover bg-[url(/assets/images/kampung-ww.webp)] rounded-2xl relative overflow-hidden lg:mt-5 mt-0">
+                        <div class="w-full h-full top-0 left-0 p-5">
                             <div class="w-full h-full flex flex-col justify-between items-stretch">
                                 <div class="w-fit p-2 bg-violet-200 rounded-[50%] self-end">
                                     <img class="w-6 h-6" alt="kampung-warna-warni"
@@ -164,8 +170,8 @@
 
         <!-- experiences -->
 
-        <section id="experiences" class="w-screen h-auto px-10 py-15 overflow-hidden">
-            <div class="w-full h-full flex flex-row justify-start gap-15">
+        <section id="experiences" class="w-screen h-fit sm:px-10 px-5 py-15 overflow-hidden">
+            <div class="w-full h-full flex sm:flex-row flex-col justify-start gap-15 mx-auto max-w-[1440px]">
                 <div class="py-2 px-5 bg-violet-100/50 w-fit h-fit rounded-2xl">
                     <h5 class="font-mono font-semibold text-gray-900 capitalize text-sm">experiences</h5>
                 </div>
@@ -178,17 +184,18 @@
                                 you to the summit—they inspire the soul, connect people, and stay forever in your
                                 memory.</span>
                         </h2>
-                        <div class="w-full h-60 grid grid-cols-3 gap-4">
+                        <div class="w-full sm:h-60 h-200 grid sm:grid-cols-3 grid-cols-1 gap-4">
                             <div class="w-full h-full rounded-2xl overflow-hidden">
-                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo" class="w-full h-full mask-cover">
+                                <img src="/assets/images/bromo.jpg" alt="gunung-bromo"
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/butak.webp" alt="gunung-butak"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/panderman.webp" alt="gunung-panderman"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                         </div>
                     </div>
@@ -198,18 +205,18 @@
                                 hidden waterfalls where rushing
                                 waters, quiet forests, and untouched beauty create moments worth remembering.</span>
                         </h2>
-                        <div class="w-full h-60 grid grid-cols-3 gap-4">
+                        <div class="w-full sm:h-60 h-200 grid sm:grid-cols-3 grid-cols-1 gap-4">
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/coban-pelangi.jpg" alt="coban-pelangi"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/coban-rondo.jpg" alt="coban-rondo"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/Coban-Jahe.jpg" alt="coban-jahe"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                         </div>
                     </div>
@@ -219,18 +226,18 @@
                                 where golden shores, gentle
                                 waves, and endless horizons turn every journey into a moment of freedom.</span>
                         </h2>
-                        <div class="w-full h-60 grid grid-cols-3 gap-4">
+                        <div class="w-full sm:h-60 h-200 grid sm:grid-cols-3 grid-cols-1 gap-4">
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/Pantai-Balekambang.jpg" alt="pantai-balekambang"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/goa-cina-beach.jpg" alt="pantai-goa-cina"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/pantai-teluk-asmara.jpg" alt="pantai-teluk-asmara"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                         </div>
                     </div>
@@ -242,18 +249,18 @@
                                 journey
                                 ends.</span>
                         </h2>
-                        <div class="w-full h-60 grid grid-cols-3 gap-4">
+                        <div class="w-full sm:h-60 h-200 grid sm:grid-cols-3 grid-cols-1 gap-4">
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/kampung-ww.webp" alt="kampung-warna-warni"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/museum-angkut.jpg" alt="museum-angkut"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                             <div class="w-full h-full rounded-2xl overflow-hidden">
                                 <img src="/assets/images/kayutanganjpg.jpg" alt="kayutangan-heritage"
-                                    class="w-full h-full mask-cover">
+                                    class="w-full h-full object-cover">
                             </div>
                         </div>
                     </div>
@@ -266,44 +273,44 @@
 
         <!-- about -->
 
-        <section id="about" class="w-screen h-auto py-15 overflow-hidden">
-            <div class="w-full h-full flex flex-col gap-10">
-                <div class="w-full h-fit relative">
+        <section id="about" class="w-full h-fit py-15 overflow-hidden">
+            <div class="w-full h-full flex flex-col gap-10 mx-auto max-w-[1440px]">
+                <div class="w-full sm:h-160 h-130 relative">
                     <div class="absolute bg-linear-to-b from-white to-white/0 z-1 w-full h-15 top-0"></div>
-                    <img src="/assets/images/about.jpg" alt="about-image" class="w-screen h-screen mask-cover">
+                    <img src="/assets/images/about.jpg" alt="about-image" class="w-full h-full object-cover">
                     <div class="absolute bg-linear-to-t from-white to-white/0 z-1 w-full h-15 bottom-0"></div>
                 </div>
-                <div class="w-full flex flex-col justify-stretch items-start gap-20 px-20">
+                <div class="w-full flex flex-col justify-stretch items-start gap-20 sm:px-10 px-5">
                     <div class="flex flex-col w-full items-start justify-stretch">
-                        <div class="self-center flex flex-row gap-10 justify-center items-start">
-                            <div class="flex flex-row gap-4">
-                                <div class="bg-violet-100 p-2 rounded-sm overflow-hidden ">
+                        <div class="self-center flex sm:flex-row flex-col gap-10 justify-center items-start">
+                            <div class="w-full flex sm:flex-row flex-col sm:justify-stretch justify-center sm:items-start items-center gap-4">
+                                <div class="bg-violet-100 h-auto w-10 p-2 rounded-sm overflow-hidden">
                                     <img src="/assets/icons/map-plus.png" alt="destinations-icon"
-                                        class="h-full w-10 mask-cover invert">
+                                        class="w-full h-full object-cover invert">
                                 </div>
-                                <div class="flex flex-col justify-start">
+                                <div class="flex flex-col justify-start sm:items-start items-center">
                                     <h3 class="font-geist font-bold text-2xl uppercase">20+</h3>
-                                    <p class="font-roboto text-md">total destinations</p>
+                                    <p class="font-roboto text-md text-nowrap">total destinations</p>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-4">
-                                <div class="bg-violet-100 p-2 rounded-sm overflow-hidden ">
+                            <div class="w-full flex sm:flex-row flex-col sm:justify-stretch justify-center sm:items-start items-center gap-4">
+                                <div class="bg-violet-100 h-auto w-10 p-2 rounded-sm overflow-hidden">
                                     <img src="/assets/icons/chart-bar-stacked.png" alt="destinations-icon"
-                                        class="h-full w-10 mask-cover invert">
+                                        class="w-full h-full object-cover invert">
                                 </div>
-                                <div class="flex flex-col justify-start">
+                                <div class="flex flex-col justify-start sm:items-start items-center">
                                     <h3 class="font-geist font-bold text-2xl uppercase">4</h3>
-                                    <p class="font-roboto text-md">categories</p>
+                                    <p class="font-roboto text-md text-nowrap">categories</p>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-4">
-                                <div class="bg-violet-100 p-2 rounded-sm overflow-hidden ">
+                            <div class="w-full flex sm:flex-row flex-col sm:justify-stretch justify-center sm:items-start items-center gap-4">
+                                <div class="bg-violet-100 h-auto w-10 p-2 rounded-sm overflow-hidden">
                                     <img src="/assets/icons/map-pin-house.png" alt="destinations-icon"
-                                        class="h-full w-10 mask-cover">
+                                        class="w-full h-full object-cover">
                                 </div>
-                                <div class="flex flex-col justify-start">
+                                <div class="flex flex-col justify-start sm:items-start items-center">
                                     <h3 class="font-geist font-bold text-2xl uppercase">Malang</h3>
-                                    <p class="font-roboto text-md">your next escape</p>
+                                    <p class="font-roboto text-md text-nowrap">your next escape</p>
                                 </div>
                             </div>
                         </div>
@@ -313,12 +320,13 @@
                         <div class="py-2 px-5 bg-violet-100/50 w-fit rounded-2xl">
                             <h5 class="font-mono font-semibold text-gray-900 capitalize text-sm">our mission</h5>
                         </div>
-                        <div class="w-full flex flex-row justify-between items-end">
+                        <div
+                            class="w-full flex lg:flex-row flex-col justify-between lg:items-end items-stretch lg:gap-0 gap-10">
                             <h3 class="font-roboto font-semibold text-3xl text-gray-600 max-w-120">
                                 We make it easier to discover the mountains, beaches, and hidden gems waiting around
                                 Malang.
                             </h3>
-                            <a href="#" class="flex flex-row gap-1">
+                            <a href="#" class="flex flex-row gap-1 lg:self-auto md:self-end">
                                 <div class="py-2 px-5 bg-gray-900 rounded-2xl">
                                     <p class="font-mono font-semibold uppercase text-white">explore malang</p>
                                 </div>
@@ -337,14 +345,14 @@
     </main>
 
     <footer>
-        <section class="w-screen h-screen overflow-hidden p-10 relative">
-            <div class="w-full h-full flex flex-col justify-start items-stretch gap-10">
+        <section class="w-full h-screen overflow-hidden sm:p-10 p-5 relative">
+            <div class="w-full h-full flex flex-col justify-between items-stretch gap-10 mx-auto max-w-[1440px]">
                 <div class="w-full flex flex-row justify-between items-stretch">
                     <div class="flex flex-col justify-start gap-10">
                         <h5 class="font-roboto font-semibold text-gray-600 capitalize">malang escape</h5>
                         <div class="flex flex-col gap-6">
-                            <h2 class="font-roboto font-semibold text-gray-300 text-6xl">/01</h2>
-                            <h2 class="font-roboto font-semibold text-gray-900 text-6xl">Beauty of Malang</h2>
+                            <h2 class="font-roboto font-semibold text-gray-300 text-4xl">/01</h2>
+                            <h2 class="font-roboto font-semibold text-gray-900 text-4xl">Beauty of Malang</h2>
                         </div>
                     </div>
                     <ul class="flex flex-col justify-end items-end gap-1">
@@ -357,8 +365,9 @@
                         <li><a class="font-mono font-semibold text-gray-800 capitalize" href="#about">about</a></li>
                     </ul>
                 </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img src="/assets/images/footer.jpg" alt="footer-image" class="w-full h-full">
+                <div class="w-full h-full lg:max-h-none sm:max-h-140 max-h-120 overflow-hidden">
+                    <img src="/assets/images/footer.jpg" alt="footer-image"
+                        class="w-full h-full lg:object-bottom-left md:object-bottom-center object-cover">
                 </div>
             </div>
         </section>
